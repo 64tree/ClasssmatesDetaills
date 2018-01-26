@@ -21,7 +21,10 @@ public:
 	Classmates(); // default constructor
 	map<ID, string > ClassmatesAttributes;
 
-	void printAllStudents();
+	void printAllStudent();
+	void removeStudent();
+	void addStudent();
+	void clearClassList();
 };
 
 #endif

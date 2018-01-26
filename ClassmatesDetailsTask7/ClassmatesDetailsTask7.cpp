@@ -5,18 +5,24 @@
 
 #include <iostream>
 
+#include "Class.h"
+
 using namespace std;
 
 int main()
 {
+	Classmates myClass;
 	int choice;
 	bool gameOn = true;
 	while (gameOn != false) {
+
+		//system("CLS");
+
 		cout << "*******************************\n";
-		cout << " 1 - Add new student to the class \n";
+		cout << " 1 - Add new student to the class. \n";
 		cout << " 2 - Remove student from the class.\n";
-		cout << " 3 - print all students in the class.\n";
-		cout << " 4 - clear the class list.\n";
+		cout << " 3 - Print all students in the class.\n";
+		cout << " 4 - Clear the class list.\n";
 		cout << " 5 - Exit.\n";
 		cout << " Enter your number of choice and press return: ";
 
@@ -25,19 +31,21 @@ int main()
 		switch (choice)
 		{
 		case 1:
-			cout << "game start!\n";
-			// rest of code here
+			cout << "Add new student to the class.\n";
+			
 			break;
 		case 2:
-			cout << "Story so far....\n";
-			// rest of code here
+			cout << "Remove student from the class\n";
+			myClass.removeStudent();
 			break;
 		case 3:
-			cout << "Ahahah, you really think I will help you?\n";
-			// rest of code here
+			cout << "Print all students in the class\n";
+			myClass.printAllStudent();
+			
 			break;
 		case 4:
-
+			cout << "Clear the class list";
+			myClass.clearClassList();
 			break;
 		case 5:
 			cout << "Exit\n";
